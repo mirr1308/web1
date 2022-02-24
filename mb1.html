@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,
+    initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style media="screen">
+      *{
+        margin : 0; padding : 0;
+      }
+      header{
+        height : 45px;
+        background-color : green;
+        position :relative;
+        text-align : center;
+        line-height : 45px;
+      }
+
+      header button, label{
+        display : block;
+        height :32px;
+        position :absolute;
+        top:7px;
+      }
+      button {
+        width :80px;
+        left : 10px;
+      }
+      label {
+        width : 80px;
+        right : 10px;
+      }
+      #toggle {display : none;}
+      div .gnb_wrap{display :none; border : 1px solid #cccccc;}
+      #toggle:checked ~ div .gnb_wrap{display :block;}
+      ul{
+        overflow :hidden;
+      }
+      li{
+        width : 20%;
+        float : left;
+        list-style : none;
+        background-color : green;
+        border : 1px solid #FFFFFF;
+        box-sizing:border-box;
+      }
+      a{
+        text-decoration : none;
+        padding : 10px 20px;
+        color : white;
+      }
+      section div:nth-child(1){
+        border-bottom : 1px solid #cccccc;
+      }
+      section div:nth-child(2){
+        color : blue;
+      }
+      section div:last-child(3){
+        bacground-image : url('');
+        backgound-repeat : no-repeat;
+      }
+
+    </style>
+  </head>
+  <body>
+    <input id="toggle" type="checkbox"/>
+    <div class="wrap">
+    <header>
+      <button type="button" name="category">Category</button>
+      <h1>Mobile<h1>
+      <label class="right" for="toggle"><img src="" alt="menu"></label>
+    </header>
+    <div class="gnb_wrap">
+      <div class="gnb">
+        <li><a href="#">gnb1</a></li>
+        <li><a href="#">gnb2</a></li>
+        <li><a href="#">gnb3</a></li>
+        <li><a href="#">gnb4</a></li>
+      </div>
+
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">lnb1</a></li>
+        <li><a href="#">lnb2</a></li>
+        <li><a href="#">lnb3</a></li>
+        <li><a href="#">lnb4</a></li>
+        <li><a href="#">lnb5</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="">
+        <h1>하이서울브랜드</h1>
+      </div>
+      <div class="">
+        서울시가
+      </div>
+      <div class="">
+        블라블라
+      </div>
+    </section>
+    </div>
+  </body>
+</html>
